@@ -1,0 +1,15 @@
+.todos {
+    display: block;
+
+    &__title {
+        font-size: 60px;
+        
+        font-weight: 400;
+        margin: auto;
+    }
+
+    &__wrapper {
+        width: 600px;
+        height: 100%;
+    }
+}

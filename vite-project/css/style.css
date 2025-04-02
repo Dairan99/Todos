@@ -1,0 +1,87 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-forest-green: #308E21;
+  --color-lucky:#A59400;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Play", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  font-family: "Play", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Play", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  display: block;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  color: #141211;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Play";
+  src: url("../../fonts/Play-Bold.woff2") format("woff2"), url("../../fonts/Play-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Play";
+  src: url("../../fonts/Play-Regular.woff2") format("woff2"), url("../../fonts/Play-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.todos {
+  display: block;
+}
+.todos__title {
+  font-size: 60px;
+  font-weight: 400;
+  margin: auto;
+}
+.todos__wrapper {
+  width: 600px;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */

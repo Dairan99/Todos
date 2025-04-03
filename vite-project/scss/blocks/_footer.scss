@@ -1,0 +1,32 @@
+.footer {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: $color-white;
+    padding: 0 20px;
+
+    &__wrapper {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__button {
+        font-size: 14px;
+        padding: 5px;
+        margin: 0;
+        border-radius: 6px;
+        background-color: transparent;
+        border: 1px solid $color-light-gray;
+    }
+
+    &__clear {
+        font-size: 14px;
+        padding: 5px;
+        margin: 0;
+        border-radius: 6px;
+        background-color: transparent;
+        border: 1px solid $color-light-gray;
+    }
+}

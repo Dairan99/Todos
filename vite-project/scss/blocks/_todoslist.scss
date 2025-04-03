@@ -1,15 +1,145 @@
 .todos {
-    display: block;
+    display: block; 
+    width: 100%; 
+    max-width: 540px; 
+    margin: auto;  
 
     &__title {
+        display: flex;
+        justify-content: center;
         font-size: 60px;
-        
         font-weight: 400;
-        margin: auto;
+        margin: 0 auto;
     }
 
     &__wrapper {
-        width: 600px;
+        position: relative;
+        width: 500px;
         height: 100%;
+        background-color: $color-white;
+        padding: 0 20px;
+    }
+
+    &__form {
+        width: 100%;
+
+        &::after {
+            display: block;
+            position: absolute;
+            content: "";
+            height: 1px;
+            width: 520px;
+            background-color: $color-light-gray;
+            top: 43px;
+            left: -20px;
+        }
+    }
+
+    &__form-wrapper {
+        position: relative;
+    }
+
+    &__input {
+        border-bottom:1px solid $color-light-gray;
+        font-size: 24px;
+        height: 40px;
+        margin: 0;
+        padding: 0 0 0 40px;
+        border: none;
+        outline: none;
+        width: 100%;
+
+        &::placeholder {
+            color: $color-light-gray;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 15%;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        color: $color-light-gray;
+    }
+
+    &__custom-checkbox {
+        position: relative;
+        display: none;
+    }
+
+    &__icon-checkmark-active {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $color-forest-green;
+    }
+
+    &__icon-checkmark {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        position: relative;
+        padding: 10px 0;
+        width: 100%;
+        margin: 0;
+
+        &::after {
+            display: block;
+            position: absolute;
+            content: "";
+            height: 1px;
+            width: 500px;
+            background-color: $color-light-gray;
+            top: 100%;
+            left: -20px;
+        }
+    }
+
+    &__item-text {
+        position: relative;
+        font-size: 28px;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+
+    &__item-text-completed {
+        position: relative;
+        font-size: 28px;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        color: $color-light-gray;
+        text-decoration: line-through
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__checkbox-container {
+        display: flex;
+        gap: 10px;
+        width: auto;
+    }
+
+    &__custom-checkbox {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: solid 1px black;
+        flex-shrink: 0;
     }
 }

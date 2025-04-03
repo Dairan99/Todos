@@ -22,17 +22,13 @@ const Footer: React.FC<FooterProps> = ({onFilterChange, activeLenght, clearActiv
 
     return (
         <div className="footer">
-            <div className="container">
-                <div className="footer__wrapper">
-                    <span className="footer__counter">{activeLenght} items left</span>
-                        <div className="footer__wrapper-button">
-                            <button className="footer__button" type="button" onClick={handleAll}>All</button>
-                            <button className="footer__button" type="button" onClick={handleActive}>Acive</button>
-                            <button className="footer__button" type="button" onClick={handleCompleted}>Completed</button>
-                        </div>
-                    <button className="footer__clear" type="button" onClick={clearActive}>Clear completed</button>
-                </div>
-            </div>
+                <span className="footer__counter">{activeLenght} items left</span>
+                    <div className="footer__wrapper">
+                        <button className="footer__button" type="button" onClick={handleAll}>All</button>
+                        <button className="footer__button" type="button" onClick={handleActive}>Acive</button>
+                        <button className="footer__button" type="button" onClick={handleCompleted}>Completed</button>
+                    </div>
+                <button className="footer__clear" type="button" onClick={clearActive}>Clear completed</button>
         </div>
     )
 }

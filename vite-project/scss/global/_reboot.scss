@@ -19,6 +19,8 @@ body {
   font-family: $ff-play;
   font-style: normal;
   font-weight: 400;
+  background-color: $color-light-gray;
+  justify-content: center;
 }
 
 input::placeholder,

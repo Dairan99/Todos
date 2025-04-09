@@ -3,7 +3,7 @@
 
 ## Установка
 
-1.  Склонируйте репозиторий: https://github.com/Dairan99/test-task-rbru
+1.  Склонируйте репозиторий: https://github.com/Dairan99/Todos
 2.  Перейдите в директорию проекта: `calculator`
 
 ## Использование
